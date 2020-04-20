@@ -7,15 +7,36 @@
 //
 
 import SwiftUI
+import MapKit
 
 struct PlaceListView: View {
+    
+    let landmards: [Landmark]
+    var onTap: () -> ()
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        
+        VStack {
+            
+            HStack {
+                EmptyView()
+            }.frame(width: UIScreen.main.bounds.size.width, height: 60)
+                .background(Color.blue)
+                .gesture(TapGesture()
+                    .onEnded(self.onTap))
+            
+            
+            List {
+                ForEach( self.landmards, id: \.id ) { landmark in
+                    Text( landmark.name )
+                }.animation(nil)
+            }
+        }.cornerRadius(16)
     }
 }
 
 struct PlaceListView_Previews: PreviewProvider {
     static var previews: some View {
-        PlaceListView()
+        PlaceListView(landmards: [Landmark(placemark: MKPlacemark())], onTap: {})
     }
 }

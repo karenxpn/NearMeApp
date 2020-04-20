@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF465A1F244DF032001E2CCB /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF465A1E244DF032001E2CCB /* Coordinator.swift */; };
+		FF465A22244DF063001E2CCB /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF465A21244DF063001E2CCB /* LocationManager.swift */; };
+		FF465A25244DF075001E2CCB /* Landmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF465A24244DF075001E2CCB /* Landmark.swift */; };
+		FF465A27244DF07A001E2CCB /* LandmarkAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF465A26244DF07A001E2CCB /* LandmarkAnnotation.swift */; };
+		FF465A2A244DF09C001E2CCB /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF465A29244DF09C001E2CCB /* MapView.swift */; };
+		FF465A2D244DF719001E2CCB /* PlaceListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF465A2C244DF719001E2CCB /* PlaceListView.swift */; };
 		FFF8572C24472E580091D525 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF8572B24472E580091D525 /* AppDelegate.swift */; };
 		FFF8572E24472E580091D525 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF8572D24472E580091D525 /* SceneDelegate.swift */; };
 		FFF8573024472E580091D525 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF8572F24472E580091D525 /* ContentView.swift */; };
@@ -16,6 +22,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FF465A1E244DF032001E2CCB /* Coordinator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		FF465A21244DF063001E2CCB /* LocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		FF465A24244DF075001E2CCB /* Landmark.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Landmark.swift; sourceTree = "<group>"; };
+		FF465A26244DF07A001E2CCB /* LandmarkAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandmarkAnnotation.swift; sourceTree = "<group>"; };
+		FF465A29244DF09C001E2CCB /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		FF465A2C244DF719001E2CCB /* PlaceListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceListView.swift; sourceTree = "<group>"; };
 		FFF8572824472E580091D525 /* NearMeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NearMeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFF8572B24472E580091D525 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFF8572D24472E580091D525 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +49,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF465A1D244DF02D001E2CCB /* Coordinatos */ = {
+			isa = PBXGroup;
+			children = (
+				FF465A1E244DF032001E2CCB /* Coordinator.swift */,
+			);
+			path = Coordinatos;
+			sourceTree = "<group>";
+		};
+		FF465A20244DF05C001E2CCB /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				FF465A21244DF063001E2CCB /* LocationManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		FF465A23244DF071001E2CCB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FF465A24244DF075001E2CCB /* Landmark.swift */,
+				FF465A26244DF07A001E2CCB /* LandmarkAnnotation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FF465A28244DF096001E2CCB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FF465A29244DF09C001E2CCB /* MapView.swift */,
+				FF465A2C244DF719001E2CCB /* PlaceListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		FFF8571F24472E580091D525 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +102,10 @@
 		FFF8572A24472E580091D525 /* NearMeApp */ = {
 			isa = PBXGroup;
 			children = (
+				FF465A28244DF096001E2CCB /* Views */,
+				FF465A23244DF071001E2CCB /* Models */,
+				FF465A20244DF05C001E2CCB /* Managers */,
+				FF465A1D244DF02D001E2CCB /* Coordinatos */,
 				FFF8572B24472E580091D525 /* AppDelegate.swift */,
 				FFF8572D24472E580091D525 /* SceneDelegate.swift */,
 				FFF8572F24472E580091D525 /* ContentView.swift */,
@@ -146,9 +196,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF465A1F244DF032001E2CCB /* Coordinator.swift in Sources */,
+				FF465A2A244DF09C001E2CCB /* MapView.swift in Sources */,
 				FFF8572C24472E580091D525 /* AppDelegate.swift in Sources */,
+				FF465A2D244DF719001E2CCB /* PlaceListView.swift in Sources */,
+				FF465A27244DF07A001E2CCB /* LandmarkAnnotation.swift in Sources */,
+				FF465A22244DF063001E2CCB /* LocationManager.swift in Sources */,
 				FFF8572E24472E580091D525 /* SceneDelegate.swift in Sources */,
 				FFF8573024472E580091D525 /* ContentView.swift in Sources */,
+				FF465A25244DF075001E2CCB /* Landmark.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,7 +339,7 @@
 		FFF8573D24472E5A0091D525 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"NearMeApp/Preview Content\"";
 				DEVELOPMENT_TEAM = Z9LZT27D3M;
@@ -303,7 +359,7 @@
 		FFF8573E24472E5A0091D525 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"NearMeApp/Preview Content\"";
 				DEVELOPMENT_TEAM = Z9LZT27D3M;
